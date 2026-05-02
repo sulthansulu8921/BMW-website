@@ -1,0 +1,30 @@
+
+> bmw-cinematic-landing@0.0.0 build
+> vite build
+
+vite v5.4.21 building for production...
+transforming...
+node_modules/@react-three/drei/core/useSpriteLoader.js (149:36): "sRGBEncoding" is not exported by "node_modules/three/build/three.module.js", imported by "node_modules/@react-three/drei/core/useSpriteLoader.js".
+✓ 2486 modules transformed.
+x Build failed in 1.75s
+error during build:
+node_modules/@react-three/drei/core/SpotLight.js (3:76): "LinearEncoding" is not exported by "node_modules/three/build/three.module.js", imported by "node_modules/@react-three/drei/core/SpotLight.js".
+file: /Users/sulthanshafeer/Downloads/demo-animation/node_modules/@react-three/drei/core/SpotLight.js:3:76
+
+1: import _extends from '@babel/runtime/helpers/esm/extends';
+2: import * as React from 'react';
+3: import { Vector3, CylinderGeometry, Matrix4, WebGLRenderTarget, RGBAFormat, LinearEncoding, ShaderMaterial, DoubleSid...
+                                                                               ^
+4: import { useThree, useFrame } from '@react-three/fiber';
+5: import { FullScreenQuad } from 'three-stdlib';
+
+    at getRollupError (file:///Users/sulthanshafeer/Downloads/demo-animation/node_modules/rollup/dist/es/shared/parseAst.js:406:41)
+    at error (file:///Users/sulthanshafeer/Downloads/demo-animation/node_modules/rollup/dist/es/shared/parseAst.js:402:42)
+    at Module.error (file:///Users/sulthanshafeer/Downloads/demo-animation/node_modules/rollup/dist/es/shared/node-entry.js:17384:16)
+    at Module.traceVariable (file:///Users/sulthanshafeer/Downloads/demo-animation/node_modules/rollup/dist/es/shared/node-entry.js:17817:29)
+    at ModuleScope.findVariable (file:///Users/sulthanshafeer/Downloads/demo-animation/node_modules/rollup/dist/es/shared/node-entry.js:15407:39)
+    at FunctionScope.findVariable (file:///Users/sulthanshafeer/Downloads/demo-animation/node_modules/rollup/dist/es/shared/node-entry.js:5676:38)
+    at FunctionBodyScope.findVariable (file:///Users/sulthanshafeer/Downloads/demo-animation/node_modules/rollup/dist/es/shared/node-entry.js:5676:38)
+    at ReturnValueScope.findVariable (file:///Users/sulthanshafeer/Downloads/demo-animation/node_modules/rollup/dist/es/shared/node-entry.js:5676:38)
+    at FunctionBodyScope.findVariable (file:///Users/sulthanshafeer/Downloads/demo-animation/node_modules/rollup/dist/es/shared/node-entry.js:5676:38)
+    at Identifier.bind (file:///Users/sulthanshafeer/Downloads/demo-animation/node_modules/rollup/dist/es/shared/node-entry.js:5450:40)
